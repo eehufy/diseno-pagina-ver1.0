@@ -5,20 +5,25 @@ const routes: Routes = [
   
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'cambiocontra',
     pathMatch: 'full'
   },
   {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
-  },{
-    path: 'registro',
-    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'cambiocontra',
+    loadChildren: () => import('./cambiocontra/cambiocontra.module').then( m => m.CambiocontraPageModule)
+  }
   
 ];
 
