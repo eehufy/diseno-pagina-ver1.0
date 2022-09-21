@@ -1,21 +1,40 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="medium">
     <ion-title>
-      blank
+      home
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/login']" color="secondary" >Login
+        <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">blank</ion-title>
+      <ion-title size="large">home</ion-title>
+      <ion-buttons slot="end">
+        <ion-button [routerLink]="['/login']" color="secondary" >Login
+          <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <ion-content>
-      i
-    </ion-content>
-  </div>
 </ion-content>
+
+
+
+    <ion-content style="text-align: center">
+      
+      
+      <ion-card >
+        <ion-card-header collapse="condense">
+          <H3>Leer QR</H3>
+          <ion-button  color="secondary">no funciona uwuy
+            <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+          </ion-button>
+        </ion-card-header>
+      </ion-card>
+    </ion-content>

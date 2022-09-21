@@ -5,7 +5,7 @@ const routes: Routes = [
   
   {
     path: '',
-    redirectTo: 'cambiocontra',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
