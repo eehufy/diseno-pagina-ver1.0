@@ -6,7 +6,11 @@
     <ion-title>
       Cambio de contraseña
     </ion-title>
-    <a slot="end" href="home">Home</a>
+    <ion-buttons slot="end">
+      <ion-button [routerLink]="['/home']" color="secondary" >Home
+        <ion-icon slot="icon-only" name="people-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
